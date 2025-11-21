@@ -1,0 +1,53 @@
+/* Genel container */
+div {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Başlık */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Input ve buton stilleri */
+input {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+/* Tablo stilleri */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}

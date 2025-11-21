@@ -1,0 +1,28 @@
+<!-- Filtre alanı -->
+<input type="text" placeholder="Adı" [(ngModel)]="filtreAdi">
+<input type="text" placeholder="Soyadı" [(ngModel)]="filtreSoyadi">
+<button (click)="getir(false)">Filtrele</button>
+<button (click)="getir(true)">Tüm Liste</button>
+
+<!-- Tablo -->
+<table *ngIf="personelList.length > 0">
+  <thead>
+    <tr>
+      <th>Adı</th>
+      <th>Soyad</th>
+      <th>Yas</th>
+      <th>Adres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of personelList">
+      <td>{{ p.adi }}</td>
+      <td>{{ p.soyadi }}</td>
+      <td>{{ p.yas }}</td>
+      <td>{{ p.adres }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Liste boşsa göster -->
+<div *ngIf="personelList.length === 0">Liste boş.</div>
